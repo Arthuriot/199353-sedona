@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона - Гостиницы</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="header">
@@ -23,7 +25,7 @@
         </ul>
       </nav>
       <div class="logo">
-        <a href="index.html"><img src="#" width="#" height="#" alt="#"></a>
+        <a href="index.html"><img src="#" width="#" height="#" alt="Логотип"></a>
       </div>
     </header>
     <div class="container">
@@ -46,18 +48,18 @@
           </div>
           <div class="filter-property-type">
             <h2>Тип жилья:</h2>
+            <input type="checkbox" name="hotel" id="hotel-btn">
             <label for="hotel-btn">
               Гостиница
             </label>
-            <input type="checkbox" name="hotel" id="hotel-btn">
+            <input type="checkbox" name="motel" id="motel-btn">
             <label for="motel-btn">
               Мотель
             </label>
-            <input type="checkbox" name="motel" id="motel-btn">
+            <input type="checkbox" name="apartments" id="apartments-btn">
             <label for="apartments-btn">
               Апартаменты
             </label>
-            <input type="checkbox" name="apartments" id="apartments-btn">
           </div>
           <div class="filter-cost">
             <h2>Стоимость в сутки (Р):</h2>
@@ -96,17 +98,17 @@
         <div class="sort-order">
           <ul>
             <li>
-              <a class="arrow arrow-up arrow-active" href="#"></a>
+              <a class="arrow arrow-up arrow-active" href="#"><img src="#" width="#" height="#" alt="стрелка-вверх"></a>
             </li>
             <li>
-              <a class="arrow arrow-down" href="#"></a>
+              <a class="arrow arrow-down" href="#"><img src="#" width="#" height="#" alt="стрелка-вниз"></a>
             </li>
           </ul>
         </div>
       </section>
       <article class="list-item">
         <div class="hotel-image">
-          <img src="#" width="#" height="#" alt="#">
+          <img src="img/img-hotels-1.jpg" width="#" height="#" alt="Гостиница">
         </div>
         <div class="hotel-description">
           <h1><a class="hotel-title" href="#">Amara Resort &amp; Spa</a></h1>
@@ -116,13 +118,16 @@
           <a class="hotel-book" href="#">Забронировать</a>
         </div>
         <div class="rating">
-          <span>???</span>
+          <span><img src="#" width="#" height="#" alt="звезда"></span>
+          <span><img src="#" width="#" height="#" alt="звезда"></span>
+          <span><img src="#" width="#" height="#" alt="звезда"></span>
+          <span><img src="#" width="#" height="#" alt="звезда"></span>
           <span>Рейтинг: 8.5</span>
         </div>
       </article>
       <article class="list-item">
         <div class="hotel-image">
-          <img src="#" width="#" height="#" alt="#">
+          <img src="img/img-hotels-2.jpg" width="#" height="#" alt="Мотель">
         </div>
         <div class="hotel-description">
           <h1><a class="hotel-title" href="#">Desert Quail Inn</a></h1>
@@ -132,13 +137,14 @@
           <a class="hotel-book" href="#">Забронировать</a>
         </div>
         <div class="rating">
-          <span>???</span>
+          <span><img src="#" width="#" height="#" alt="звезда"></span>
+          <span><img src="#" width="#" height="#" alt="звезда"></span>
           <span>Рейтинг: 8.9</span>
         </div>
       </article>
       <article class="list-item">
         <div class="hotel-image">
-          <img src="#" width="#" height="#" alt="#">
+          <img src="img/img-hotels-3.jpg" width="#" height="#" alt="Апартаменты">
         </div>
         <div class="hotel-description">
           <h1><a class="hotel-title" href="#">Villas at Poco Diablo</a></h1>
@@ -148,7 +154,9 @@
           <a class="hotel-book" href="#">Забронировать</a>
         </div>
         <div class="rating">
-          <span>???</span>
+          <span><img src="#" width="#" height="#" alt="звезда"></span>
+          <span><img src="#" width="#" height="#" alt="звезда"></span>
+          <span><img src="#" width="#" height="#" alt="звезда"></span>
           <span>Рейтинг: 9.2</span>
         </div>
       </article>
@@ -160,18 +168,18 @@
       <div сlass="social">
         <ul>
           <li>
-            <a class="button social-button-tw" href="#"><img src="#" width="#" height="#" alt="#"></a>
+            <a class="button social-button-tw" href="#"><img src="#" width="#" height="#" alt="twitter"></a>
           </li>
           <li>
-            <a class="button social-button-fb" href="#"><img src="#" width="#" height="#" alt="#"></a>
+            <a class="button social-button-fb" href="#"><img src="#" width="#" height="#" alt="facebook"></a>
           </li>
           <li>
-            <a class="button social-button-yt" href="#"><img src="#" width="#" height="#" alt="#"></a>
+            <a class="button social-button-yt" href="#"><img src="#" width="#" height="#" alt="youtube"></a>
           </li>
         </ul>
       </div>
       <div class="copyright">
-        <a class="html-academy" href="#">WEBSITE BY</a>
+        <a class="html-academy" href="#">WEBSITE BY<img src="#" alt="Иконка HTML Academy"></a>
       </div>
     </footer>
   </body>
