@@ -3,6 +3,7 @@ body {
   color: #333333;
   font-family: PT Sans;
   line-height: 21px;
+  width: 100%;
 }
 
 h1 {
@@ -19,4 +20,158 @@ h2 {
   font-weight: bold;
   font-family: PT Sans;
   line-height: 21px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1200px;
+  text-transform: uppercase;
+}
+
+.header {
+  width: 100%;
+}
+
+.main-menu ul {
+  display: flex;
+  width: 100%;
+}
+
+.main-menu li {
+  width: 250px;
+  list-style: none;
+  line-height: 26px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.main-menu li:nth-child(2) {
+  margin-right: 120px;
+}
+
+.main-menu a {
+  text-decoration: none;
+}
+
+.logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -69px;
+}
+
+.main-image {
+  width: 100%;
+  text-align: center;
+}
+
+.description {
+  width: 100%;
+  text-align: center;
+}
+
+.features {
+  width: 100%;
+  display: flex;
+}
+
+.features-item {
+  width: 400px;
+  text-align: center;
+}
+
+.features-image {
+  width: 800px;
+}
+
+.recommend {
+  width: 100%;
+  display: flex;
+}
+
+.recommend-item {
+  width: 400px;
+  text-align: center;
+}
+
+.search-hotel {
+  width: 100%;
+  text-align: center;
+}
+
+.booking {
+  width: 100%;
+}
+
+ .footer {
+   width: 100%;
+   display: flex;
+ }
+
+ .footer div {
+   width: 400px;
+ }
+
+ .social ul {
+   display: flex;
+ }
+
+ .social li {
+   width: 200px;
+   list-style: none;
+ }
+
+ .preferences {
+   width: 100%;
+ }
+
+ .filter {
+   display: flex;
+ }
+
+.filter-extras {
+  width: 300px;
+}
+
+.filter-property-type {
+  width: 300px;
+}
+
+.filter-cost {
+  width: 600px;
+}
+
+.sort {
+  display: flex;
+}
+
+.results-amount {
+  width: 120px;
+}
+
+.sort-by {
+  display: flex;
+  width: 600px;
+}
+
+.sort-order {
+  width: 240px;
+}
+
+.sort-by ul {
+  display: flex;
+  list-style: none;
+}
+
+.sort-by li {
+  width: 110px;
+}
+
+.sort-order ul {
+  display: flex;
+  list-style: none;
+}
+
+.sort-order li {
+  width: 100px;
 }
