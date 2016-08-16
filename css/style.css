@@ -30,6 +30,7 @@ h2 {
   margin: 0 auto;
   width: 1200px;
   text-transform: uppercase;
+  outline: 1px solid #666;
 }
 
 .header {
@@ -39,6 +40,8 @@ h2 {
 .main-menu ul {
   display: flex;
   width: 100%;
+  padding: 0;
+  outline: 1px solid #666;
 }
 
 .main-menu li {
@@ -118,6 +121,7 @@ h2 {
 
  .social ul {
    display: flex;
+   padding: 0;
  }
 
  .social li {
@@ -146,23 +150,54 @@ h2 {
 
 .list-item {
   display: flex;
+  outline: 1px solid #666;
 }
 
 .hotel-image {
   width: 165px;
   margin-left: 72px;
+  outline: 1px solid #666;
+}
+
+.hotel-title {
+  outline: 1px solid #666;
 }
 
 .hotel-description {
   width: 781px;
+  outline: 1px solid #666;
+}
+
+.hotel-details {
+  display: flex;
+}
+
+.hotel-book {
+  width: 110px;
+  outline: 1px solid #666;
+}
+
+.hotel-type {
+  width: 110px;
+  outline: 1px solid #666;
 }
 
 .hotel-rating {
   width: 110px;
+  outline: 1px solid #666;
+}
+
+.stars {
+  text-align: right;
+}
+
+.rating {
+  text-align: right;
 }
 
 .preferences {
   width: 100%;
+  outline: 1px solid #666;
 }
 
 .filter {
@@ -172,28 +207,34 @@ h2 {
 .filter-extras {
  width: 264px;
  margin-left: 72px;
+ outline: 1px solid #666;
 }
 
 .filter-property-type {
  width: 264px;
+ outline: 1px solid #666;
 }
 
 .filter-cost {
  width: 528px;
+ outline: 1px solid #666;
 }
 
 .sort {
  display: flex;
+ outline: 1px solid #666;
 }
 
 .results-amount {
  width: 165px;
  margin-left: 72px;
+ outline: 1px solid #666;
 }
 
 .sort-by {
  display: flex;
  width: 781px;
+ outline: 1px solid #666;
 }
 
 .sort-by span {
@@ -212,9 +253,11 @@ h2 {
 
 .sort-order {
  width: 110px;
+ outline: 1px solid #666;
 }
 
 .sort-order ul {
  display: flex;
  list-style: none;
+ padding: 0;
 }
