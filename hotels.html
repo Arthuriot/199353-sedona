@@ -33,19 +33,19 @@
           <form class="filter" action="#" method="post">
             <div class="filter-extras">
             <h2>Инфраструктура:</h2>
-              <div class="check-box">
+              <div class="check-box checkbox-unchecked">
                 <input type="checkbox" name="pool" id="pool-btn">
                 <label for="pool-btn">
                   Бассейн
                 </label>
               </div>
-              <div class="check-box">
+              <div class="check-box checkbox-unchecked">
                 <input type="checkbox" name="parking" id="parking-btn">
                 <label for="parking-btn">
                   Парковка
                 </label>
               </div>
-              <div class="check-box">
+              <div class="check-box checkbox-unchecked">
                 <input type="checkbox" name="wifi" id="wifi-btn">
                 <label for="wifi-btn">
                   Wi-Fi
@@ -54,36 +54,45 @@
             </div>
             <div class="filter-property-type">
               <h2>Тип жилья:</h2>
-              <div class="check-box">
+              <div class="check-box checkbox-unchecked">
                 <input type="checkbox" name="hotel" id="hotel-btn">
                 <label for="hotel-btn">
                   Гостиница
                 </label>
               </div>
-              <div class="check-box">
+              <div class="check-box checkbox-unchecked">
                 <input type="checkbox" name="motel" id="motel-btn">
                 <label for="motel-btn">
                   Мотель
                 </label>
               </div>
-              <div class="check-box">
+              <div class="check-box checkbox-unchecked">
                 <input type="checkbox" name="apartments" id="apartments-btn">
                 <label for="apartments-btn">
                   Апартаменты
                 </label>
               </div>
             </div>
-            <div class="filter-cost">
-              <h2>Стоимость в сутки (Р):</h2>
-              <label for="from-btn">
-                От
-              </label>
-              <input type="text" name="from" id="from-btn">
-              <label for="to-btn">
-                До
-              </label>
-              <input type="text" name="to" id="to-btn">
-              <button class="btn" type="submit">
+            <div class="filter-range">
+              <h2>Стоимость в сутки (р):</h2>
+              <div class="price-controls">
+                <label class="min-price">
+                  от
+                  <input type="text" name="min-price" value="0">
+                </label>
+                <label class="max-price">
+                  до
+                  <input type="text" name="max-price" value="3000">
+                </label>
+              </div>
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="range-toggle range-toggle-min"></div>
+                <div class="range-toggle range-toggle-max"></div>
+              </div>
+              <button class="btn-transparent" type="submit">
                 Показать
               </button>
             </div>
@@ -108,14 +117,8 @@
             </ul>
           </div>
           <div class="sort-order">
-            <ul>
-              <li>
-                <a class="arrow arrow-up arrow-active" href="#"><img src="#" width="20px" height="20px" alt="стрелка-вверх"></a>
-              </li>
-              <li>
-                <a class="arrow arrow-down" href="#"><img src="#" width="20px" height="20px" alt="стрелка-вниз"></a>
-              </li>
-            </ul>
+            <a class="arrow arrow-up" href="#"></a>
+            <a class="arrow arrow-down arrow-active" href="#"></a>
           </div>
         </section>
         <article class="list-item">
@@ -131,16 +134,16 @@
               </div>
               <div class="hotel-book">
                 <span>От 3500 Р.</span>
-                <a href="#">Забронировать</a>
+                <a href="#§">Забронировать</a>
               </div>
             </div>
           </div>
           <div class="hotel-rating">
             <div class="stars">
-              <span><img src="#" width="20px" height="20px" alt="звезда"></span>
-              <span><img src="#" width="20px" height="20px" alt="звезда"></span>
-              <span><img src="#" width="20px" height="20px" alt="звезда"></span>
-              <span><img src="#" width="20px" height="20px" alt="звезда"></span>
+              <span class="rating-star"></span>
+              <span class="rating-star"></span>
+              <span class="rating-star"></span>
+              <span class="rating-star"></span>
             </div>
             <div class="rating">
               <span>Рейтинг: 8.5</span>
@@ -166,8 +169,8 @@
           </div>
           <div class="hotel-rating">
             <div class="stars">
-              <span><img src="#" width="20px" height="20px" alt="звезда"></span>
-              <span><img src="#" width="20px" height="20px" alt="звезда"></span>
+              <span class="rating-star"></span>
+              <span class="rating-star"></span>
             </div>
             <div class="rating">
               <span>Рейтинг: 8.5</span>
@@ -193,9 +196,9 @@
           </div>
           <div class="hotel-rating">
             <div class="stars">
-              <span><img src="#" width="20px" height="20px" alt="звезда"></span>
-              <span><img src="#" width="20px" height="20px" alt="звезда"></span>
-              <span><img src="#" width="20px" height="20px" alt="звезда"></span>
+              <span class="rating-star"></span>
+              <span class="rating-star"></span>
+              <span class="rating-star"></span>
             </div>
             <div class="rating">
               <span>Рейтинг: 8.5</span>
@@ -204,23 +207,16 @@
         </article>
         <footer class="footer">
           <div class="hashtag">
-            <a href="#">#VISITSEDONA</a>
+            <span><a href="#">#VISITSEDONA</a></span>
           </div>
           <div class="share">
-            <ul>
-              <li>
-                <a class="social social-tw" href="#"><img src="#" width="46px" height="48px" alt="twitter"></a>
-              </li>
-              <li>
-                <a class="social social-fb" href="#"><img src="#" width="46px" height="48px" alt="facebook"></a>
-              </li>
-              <li>
-                <a class="social social-yt" href="#"><img src="#" width="46px" height="48px" alt="youtube"></a>
-              </li>
-            </ul>
+            <a class="social social-tw" href="#"></a>
+            <a class="social social-fb" href="#"></a>
+            <a class="social social-yt" href="#"></a>
           </div>
           <div class="copyright">
-            <a class="html-academy" href="#">WEBSITE BY<img src="#" alt="Иконка HTML Academy"></a>
+            <span>WEBSITE BY</span>
+            <a class="html-academy-icon" href="#">HTML academy</a>
           </div>
         </footer>
     </div>
