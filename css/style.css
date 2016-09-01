@@ -384,7 +384,7 @@ a.main-menu-active:active {
 .search-hotel p {
   padding-left: 400px;
   padding-right: 400px;
-    outline: 1px solid #666;
+  outline: 1px solid #666;
 }
 
 .search-btn {
@@ -463,11 +463,11 @@ a.main-menu-active:active {
   outline: none;
 }
 
-.booking-form input:hover {
+.booking-form input[type="text"]:hover {
   background-color: #ebebeb;
 }
 
-.booking-form input:active {
+.booking-form input[type="text"]:focus {
   background-color: #fff;
 }
 
@@ -611,7 +611,9 @@ a.main-menu-active:active {
 	background-position: -6px -9px ;
 }
 
-.arrow-active {
+.arrow-active,
+.arrow-active:hover,
+.arrow-active:active {
 	background-position: -6px -9px ;
 }
 
@@ -760,13 +762,6 @@ input[type = "checkbox"]:checked + label {
   background: url(../img/sprites.png) no-repeat;
 	background-position: 0 -249px ;
   width: 26px;
-  height: 22px;
-}
-
-input[type = "checkbox"]:disabled + label {
-  background: url(../img/sprites.png) no-repeat;
-  background-position: -150px -10px;
-  width: 22px;
   height: 22px;
 }
 
