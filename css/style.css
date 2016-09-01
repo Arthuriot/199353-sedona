@@ -469,6 +469,7 @@ a.main-menu-active:active {
 
 .booking-form input[type="text"]:focus {
   background-color: #fff;
+  border: 2px solid #e5e5e5;
 }
 
 .booking-form:first-child {
@@ -486,7 +487,6 @@ a.main-menu-active:active {
   margin-left: 55px;
   margin-right: 55px;
   position: relative;
-  outline: 1px solid #666;
 }
 
 .field label {
@@ -774,6 +774,16 @@ input[type = "checkbox"]:checked + label {
 	background-position: 0 -249px;
   width: 26px;
   height: 22px;
+}
+
+.checkbox-checked input[type="checkbox"]:disabled + label {
+  background: url(../img/sprites.png) no-repeat;
+	background-position: -1px -301px;
+}
+
+.checkbox-unchecked input[type="checkbox"]:disabled + label {
+  background: url(../img/sprites.png) no-repeat;
+	background-position: -98px -249px;
 }
 
 .checkbox-unchecked {
