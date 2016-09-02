@@ -124,6 +124,7 @@ a.main-menu-active:active {
 .footer {
   width: 100%;
   display: flex;
+  background: rgba(255, 255, 255, 0.9);
 }
 
 .footer div {
@@ -384,16 +385,15 @@ a.main-menu-active:active {
 .search-hotel p {
   padding-left: 400px;
   padding-right: 400px;
-  outline: 1px solid #666;
 }
 
-.search-btn {
+.form-popup {
   width: 568px;
   margin: 0 auto;
   outline: 1px solid #666;
 }
 
-.search-btn a {
+.form-popup a {
   font-size: 21px;
   font-weight: bold;
   line-height: 26px;
@@ -405,16 +405,29 @@ a.main-menu-active:active {
   background-color: #766357;
 }
 
+.modal-content-map {
+  height: 593px;
+  width: 100%;
+  position: absolute;
+}
+
 .booking {
   font-weight: bold;
   width: 100%;
-  background: url(../img/map.png) no-repeat;
 }
 
 .booking-form {
   width: 568px;
   margin: 0 auto;
   background-color: #fff;
+  display: none;
+  position: absolute;
+  left: 349px;
+  padding-top: 55px;
+}
+
+.booking-form-show {
+  display: block;
 }
 
 .form-icon {
@@ -425,17 +438,17 @@ a.main-menu-active:active {
 }
 
 .form-minus-icon {
-	background-position: -90px -143px;
+	background-position: -92px -143px;
 	width: 12px;
 	height: 3px;
 }
 
 .form-minus-icon:hover {
-  background-position: -41px -143px;
+  background-position: -43px -143px;
 }
 
 .form-minus-icon:active {
-  background-position: 7px -142px;
+  background-position: 5px -142px;
 }
 
 .form-plus-icon {
@@ -460,11 +473,13 @@ a.main-menu-active:active {
   height: inherit;
   float: right;
   width: 346px;
+  border: 2px solid #f2f2f2;
   outline: none;
 }
 
 .booking-form input[type="text"]:hover {
   background-color: #ebebeb;
+  border: 2px solid #ebebeb;
 }
 
 .booking-form input[type="text"]:focus {
