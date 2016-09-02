@@ -124,7 +124,12 @@ a.main-menu-active:active {
 .footer {
   width: 100%;
   display: flex;
-  background: rgba(255, 255, 255, 0.9);
+}
+
+.footer-main {
+  background: rgba(255, 255, 255, 0.8);
+  margin-top: -120px;
+  position: relative;
 }
 
 .footer div {
@@ -405,15 +410,10 @@ a.main-menu-active:active {
   background-color: #766357;
 }
 
-.modal-content-map {
-  height: 593px;
-  width: 100%;
-  position: absolute;
-}
-
 .booking {
   font-weight: bold;
   width: 100%;
+  position: relative;
 }
 
 .booking-form {
@@ -421,13 +421,14 @@ a.main-menu-active:active {
   margin: 0 auto;
   background-color: #fff;
   display: none;
-  position: absolute;
-  left: 349px;
-  padding-top: 55px;
 }
 
 .booking-form-show {
+  position: absolute;
   display: block;
+  left: 316px;
+  top: 0px;
+  padding-top: 55px;
 }
 
 .form-icon {
