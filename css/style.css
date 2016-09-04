@@ -11,7 +11,7 @@ body {
     font-size: 14px;
     color: #333;
     font-family: "PT Sans", Arial, sans-serif;
-    ;
+    background-color: #f2f2f2;
     line-height: 21px;
     width: 100%;
 }
@@ -46,6 +46,7 @@ img {
 }
 .header {
     width: 100%;
+    background-color: #ffffff;
 }
 .main-menu ul {
     display: -webkit-box;
@@ -117,6 +118,7 @@ a.main-menu-active:active {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    background-color: #fefefe;
 }
 .footer div {
     width: 400px;
@@ -230,6 +232,7 @@ a.main-menu-active:active {
     padding: 355px;
     padding-top: 47px;
     padding-bottom: 50px;
+        background-color: #ffffff;
 }
 .sedona-intro p {
     line-height: 26px;
@@ -291,6 +294,7 @@ a.main-menu-active:active {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+        background-color: #ffffff;
 }
 .recommend-item {
     width: 400px;
@@ -423,9 +427,9 @@ a.main-menu-active:active {
     left: 316px;
     top: 0px;
     padding-top: 55px;
-    /*box-shadow: 0 5px 50px -10px #a6a6a6,
-                -5px 0px 50px -10px #a6a6a6,
-                -5px 0px 50px -10px #a6a6a6;*/
+    box-shadow: 0 15px 30px -15px #a6a6a6,
+                15px 0 30px -15px #a6a6a6,
+                -15px 0 30px -15px #a6a6a6;
     -webkit-animation: bounce 0.6s;
     animation: bounce 0.6s;
 }
@@ -789,10 +793,13 @@ input[type="checkbox"]:checked + label {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding-top: 31px;
     padding-bottom: 29px;
     border-bottom: 1px solid #e5e5e5;
+    background-color: #fefefe;
 }
 .sort h3 {
     margin: 0;
@@ -810,11 +817,9 @@ input[type="checkbox"]:checked + label {
     font-size: 11px;
     line-height: 16px;
     margin-top: 4px;
-    outline: 1px solid #666;
 }
 .sort-by span {
     padding-right: 46px;
-    outline: 1px solid #666;
 }
 .sort-by ul {
     display: -webkit-box;
@@ -823,7 +828,6 @@ input[type="checkbox"]:checked + label {
     margin: 0;
     padding: 0;
     list-style: none;
-    outline: 1px solid #666;
 }
 .sort-by li {
     padding-right: 35px;
@@ -901,6 +905,7 @@ a.sort-by-active {
     padding-top: 26px;
     padding-bottom: 24px;
     border-bottom: 1px solid #e5e5e5;
+    background-color: #fefefe;
 }
 .list-item h1 {
     margin: 0;
@@ -976,9 +981,15 @@ a.hotel-title:active {
     margin-top: 3px;
 }
 .stars {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
 }
 .rating-star {
     background: url(../img/sprites.png) no-repeat;
