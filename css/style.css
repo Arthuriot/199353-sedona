@@ -10,7 +10,7 @@
 body {
     font-size: 14px;
     color: #333;
-    font-family: "PT Sans", Arial, sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     background-color: #f2f2f2;
     line-height: 21px;
     width: 100%;
@@ -19,14 +19,14 @@ h1 {
     font-size: 21px;
     color: #000;
     font-weight: bold;
-    font-family: PT Sans;
+    font-family: "PT Sans";
     line-height: 26px;
 }
 h2 {
     font-size: 21px;
     color: #000;
     font-weight: bold;
-    font-family: PT Sans;
+    font-family: "PT Sans";
     line-height: 21px;
 }
 h3 {
@@ -232,7 +232,7 @@ a.main-menu-active:active {
     padding: 355px;
     padding-top: 47px;
     padding-bottom: 50px;
-        background-color: #ffffff;
+    background-color: #ffffff;
 }
 .sedona-intro p {
     line-height: 26px;
@@ -257,10 +257,10 @@ a.main-menu-active:active {
     padding-right: 125px;
 }
 .features-item p {
-    padding-left: 50px;
-    padding-right: 50px;
     margin-bottom: 53px;
     margin-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 .features-blue {
     background: #81b3d2;
@@ -294,23 +294,21 @@ a.main-menu-active:active {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-        background-color: #ffffff;
+    background-color: #ffffff;
 }
 .recommend-item {
     width: 400px;
     text-align: center;
 }
 .recommend-item h2 {
-    padding-left: 160px;
-    padding-right: 160px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 .recommend-item p {
     margin-top: 23px;
+    margin-bottom: 82px;
     padding-left: 73px;
     padding-right: 75px;
-    margin-bottom: 82px;
 }
 .recommend-icons {
     background: url(../img/sprites.png) no-repeat;
@@ -344,6 +342,7 @@ a.main-menu-active:active {
     text-align: center;
     padding-top: 57px;
     line-height: 24px;
+    background-color: #ffffff;
 }
 .search-hotel h3 {
     margin: 0;
@@ -637,18 +636,18 @@ a.main-menu-active:active {
     margin-left: 72px;
     padding-right: 0;
 }
-.filter label {
-    line-height: 26px;
+.filter-property-type {
+    width: 264px;
 }
 input[type="checkbox"] {
     display: none;
 }
 input[type="checkbox"] + label {
     display: block;
+    line-height: 26px;
     padding-left: 40px;
     cursor: pointer;
     color: #fff;
-    white-space: nowrap;
 }
 input[type="checkbox"]:checked + label {
     background: url(../img/sprites.png) no-repeat;
@@ -677,9 +676,6 @@ input[type="checkbox"]:checked + label {
     background-position: -51px -252px;
     width: 22px;
     height: 22px;
-}
-.filter-property-type {
-    width: 264px;
 }
 .filter-range {
     margin-left: 220px;
@@ -994,9 +990,9 @@ a.hotel-title:active {
 .rating-star {
     background: url(../img/sprites.png) no-repeat;
     background-position: -352px -302px;
-    width: 18px;
+    width: 17px;
     height: 17px;
-    margin-right: 6px;
+    margin-right: 7px;
 }
 .rating-star:last-child {
     margin-right: 0;
