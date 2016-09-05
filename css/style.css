@@ -613,7 +613,7 @@ a.main-menu-active:active {
 .preferences {
     padding-bottom: 10px;
     width: 100%;
-    background-color: #675c60;
+    /*background-color: #675c60;*/
     background: url(../img/filter-background.jpg) no-repeat;
     background-position: 0% 16%;
 }
