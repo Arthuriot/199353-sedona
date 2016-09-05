@@ -648,6 +648,7 @@ input[type="checkbox"] + label {
     padding-left: 40px;
     cursor: pointer;
     color: #fff;
+    min-width: 200px;
 }
 input[type="checkbox"]:checked + label {
     background: url(../img/sprites.png) no-repeat;
